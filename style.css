@@ -1,0 +1,142 @@
+ @import url('https://fonts.googleapis.com/css?family=Muli&display=swap'); 
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background: #141414;
+	color: #fff;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 10px;
+    overflow: hidden;
+	min-height: 100vh;
+}
+
+.notification{
+	display: flex;
+	justify-content: end;
+	align-items: center;	
+	width: 500px;
+	height: 150px;	
+	margin-bottom: 20px;
+    overflow: hidden;
+}
+
+
+.warning{
+	width:400px;
+	height: 150px;
+	transform: translateX(100%);
+	background-color: #fff;		
+	border-radius: 10px;	
+	padding: 15px;
+	color:#add8e6;
+	transition: all 400ms cubic-bezier(.47,1.64,.41,.8);
+}
+
+.warning .warning_title{
+    color: red;
+	width: 50px;
+	height: 50px;
+	display: flex;
+	font-size: 2rem;
+	align-items: center;	
+}
+
+.warning h2 p{
+	margin-top: -2px;
+	margin-left: 20px;
+}
+
+.warning  p{
+	color: red;
+	margin-top: -10px;
+}
+
+p {
+	margin: 5px 0;
+}
+
+h2 {
+	margin: 10px 0 20px;
+	text-align: center;
+}
+
+input[type=checkbox] {
+	margin-right: 0;
+}
+
+.container {
+	background-color: rgba(244, 244, 244, 0.155);
+    /* border: 20px solid rgb(115, 43, 166); */
+	padding: 20px;
+	width: 800px;
+	
+	max-width: 100%;
+	color: #fff;
+}
+
+.result-container {
+	background-color: rgba(0, 0, 0, 0.4);
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	position: relative;
+	font-size: 18px;
+	letter-spacing: 1px;
+	padding: 12px 10px;
+	height: 50px;
+	width: 100%;
+}
+
+.result-container #passwordEL {
+  	word-wrap: break-word;
+	max-width: calc(100% - 40px);
+}
+
+.result-container .btn {
+	font-size: 20px;
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	height: 40px;
+	width: 40px;
+}
+
+.btn {
+	border: none;
+	cursor: pointer;
+	font-size:1.2rem;
+	padding: 8px 12px;
+	background-color: lightblue;
+}
+
+.clipboard{
+    opacity: 0;
+	
+}
+
+.active{
+	opacity: 1;
+}
+.btn-large {
+	display: block;
+	width: 100%;
+}
+
+.input_bloc {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 15px 0;
+}
+
+
+.input_bloc label{
+	font-size: 1.5rem;
+}
+	

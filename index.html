@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="#">
+    <title>Password generate</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" /> 
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+	<div class="notification">
+		 <div class="warning">
+			<h2 class="warning_title">
+				<span><i class="fa-sharp fa-solid fa-xmark"></i></span>
+				<p>erreur</p>
+			</h2>
+			<p class="info_warning"> le taille du est inferieur au nombre de case coché</p>
+		</div>
+	</div>
+    <!-- INSERT HTML HERE -->
+<div class="container">	
+	<h2>Password Generator</h2>
+	<div class="result-container">
+		<span id="passwordEL"></span>
+		<button class="btn clipboard">
+			<i class="fa-solid fa-copy"></i>
+		</button>
+	</div>
+	<div class="settings">
+		<div class="input_bloc">
+			<label for="length">Password length</label>
+			<input type="text" id="length" min='1' max='20' />
+		</div>
+		<div class="input_bloc">
+			<label for="uppercase">Includes uppercase letter</label> 
+			<input type="checkbox" id="uppercase"  />
+		</div>
+		<div class="input_bloc">
+			<label for="lowercase">Includes lowercase letter</label> 
+			<input type="checkbox" id="lowercase"  />
+		</div>
+		<div class="input_bloc">
+			<label for="numbers"> Includes numbers</label> 
+			<input type="checkbox" id="numbers"  />
+		</div>
+		<div class="input_bloc">
+			<label for="symbols">Includes special characters</label> 
+			<input type="checkbox" id="symbols"  />
+		</div>
+	</div>
+	<button class="btn btn-large" id="generate">
+		Generate password
+	</button>
+</div>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
